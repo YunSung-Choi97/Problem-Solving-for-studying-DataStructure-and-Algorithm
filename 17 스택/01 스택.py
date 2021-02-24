@@ -1,8 +1,8 @@
-N = int(input())  # 입력받을 명령의 개수를 입력받음
-lst = []  # 정수를 저장하는 스택을 리스트 형태로 구현
+N = int(input())  # N : 입력받을 명령의 개수
+lst = []  # lst : push된 정수를 저장하는 스택을 리스트로 구현
 
-for i in range(N):  # N번 수행
-    order = input()  # 입력받은 명령을 저장
+for i in range(N):  # N번 반복
+    order = input()  # order : 입력받은 명령을 할당
 
     # push 기능 구현
     if order[:4] == 'push':
