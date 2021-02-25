@@ -24,7 +24,6 @@ while True:  # 무한루프 형성
                 print("no")
                 result = False
                 break
-    
         elif val == ']':
             if not stk:
                 print("no")
@@ -37,6 +36,12 @@ while True:  # 무한루프 형성
                 result = False
                 break
     
-    # 위 조건을 통과한 경우 균형잡힌 문자열이다
-    if result:
-        print("yes")
+    # 마지막 글자까지 동작한 후에 stk안에 여는 괄호가 남아있는 경우는 균형잡힌 문자열이 아니다.
+    # 모든 조건을 통과한 경우 균형잡힌 문자열이다
+    if result :
+        if not stk:
+            print("yes")
+        else:
+            print("no")
+            result = False
+            break
