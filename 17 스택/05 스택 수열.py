@@ -37,5 +37,6 @@ for i in range(n):  # n번 반복
         print("NO")
         exit(0)
 
+# [결과출력] result 값들을 출력
 for val in result:
     print(val)
