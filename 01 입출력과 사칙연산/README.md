@@ -3,8 +3,6 @@
 
 ## Summary
 
-<br>
-
 ### **함수**
 
 - print()
@@ -14,19 +12,15 @@
  sep : print(value1, value2, sep=value3)와 같이 사용하여 val1과 val2를 val3로 구분하여 출력할 수 있다. 기본값은 ' '(공백)이다.<br>
  end : print(value1, end=value2)와 같이 사용하면 val1을 출력한 후(모든 입력 인자를 출력한 후) value2을 출력한다. 기본값은 '\n'(줄바꿈)이다.<br>
 
-<br>
 - input()
 
 > 사용자로부터 입력받은 값을 리턴하는 함수<br>
  input(value1)와 같이 사용하면 입력받기 전 val1을 화면에 출력하게 된다.<br>
 
-<br>
 - map()
 
 > 일반적으로 map(함수, 데이터)와 같이 입력 받는다.<br>
  입력받은 데이터에 앞의 함수를 적용하여 하나씩 리턴해준다.<br>
-
-<br>
 
 ### **문자열**
 
@@ -40,11 +34,7 @@
 
 ---
 
-<br>
-
 ## ***Source Code***
-
-<br>
 
 ## 01 Hello World
 
