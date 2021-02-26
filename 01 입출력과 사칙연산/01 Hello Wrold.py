@@ -1,0 +1,1 @@
+print("Hello World!")  # print(출력할 내용)
