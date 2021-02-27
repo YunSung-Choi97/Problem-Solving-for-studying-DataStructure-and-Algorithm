@@ -15,7 +15,7 @@
 
 ---
 
-## Summary (chap.01)
+## Summary (chap.01~02)
 
 ### **함수**
 
