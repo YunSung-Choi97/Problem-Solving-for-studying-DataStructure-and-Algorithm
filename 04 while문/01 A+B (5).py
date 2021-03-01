@@ -1,5 +1,5 @@
-while True:
-    num1, num2 = map(int, input().split())
-    if num1 == 0 & num2 == 0:
+while True:  # 무한 반복
+    A, B = map(int, input().split())  # 
+    if A == 0 & B == 0:  # 무한 루프를 빠져나오는 조건
         break
-    print(num1+num2)
+    print(A+B)
