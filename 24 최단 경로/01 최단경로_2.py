@@ -1,13 +1,13 @@
-import heapq
 import sys
 input = sys.stdin.readline
-INF = int(1e9)
 
+INF = int(1e9)  # INF : 초기에 최단 경로를 무한대로 설정해주기 위해 큰 숫자를 넣어줌
 V, E = map(int, input().split())  # V, E : 정점의 개수, 간선의 개수
 start_V = int(input())  # start_V : 시작 정점의 번호
 
-# 2개의 리스트에 대하여 인덱스값과 출발점을 동일하게 생각해주기 위해 0번째 인덱스는 사용하지않음.
+# 3개의 리스트에 대하여 인덱스값과 출발점을 동일하게 생각해주기 위해 0번째 인덱스는 사용하지않음.
 graph = [[] for _ in range(V+1)]  # graph : 각 점에서 갈수있는 점들의 정보 저장
+visited = [False] * (V+1)  # visited : 방문한 점을 확인
 distance = [INF] * (V+1)  # distance : 최단거리. 최초에는 무한으로 초기화
 
 for _ in range(E):  # 간선의 정보 입력받음
@@ -26,23 +26,24 @@ def get_smallest_node():
 
 # 다익스트라 알고리즘
 def dijkstra(start):  # 시작 정점의 번호를 입력으로 받음
-    q = []
-    heapq.heappush(q, (0, start))  # 시작노드로 가기위한 최단 경로는 0으로 설정하여, 큐에 삽입
+    # 시작점의 최단거리는 0, 방문은 한 점으로 바꿔줌
     distance[start] = 0
+    visited[start] = True
 
-    while q:  # 큐가 비어있지 않다면
-        dist, now = heapq.heappop(q)  # 가장 최단 거리가 짧은 노드에 대한 정보 꺼내기
-        
-        if distance[now] < dist:  # 현재 노드가 이미 처리된 적이 있는 노드라면 무시
-            continue
+    # 시작점에서 바로 갈수있는 점들에 최단거리 할당
+    for i in graph[start]:
+        distance[i[0]] = i[1]
+    
+    # 시작점을 제외한 전체 V-1개의 점에 대해 반복
+    for i in range(V-1):
+        now = get_smallest_node()  # 현재 최단거리가 가장 작은 점부터 진행.
+        visited[now] = True
 
-        for i in graph[now]:  # 현재 노드와 연결된 다른 인접한 노드들을 확인
-            cost = dist + i[1]
-
-            # 현재 노드를 거쳐서, 다른 노드로 이동하는 거리가 더 짧은 경우
-            if cost < distance[i[0]]:
-                distance[i[0]] = cost
-                heapq.heappush(q, (cost, i[0]))
+        # 현재 점과 연결된 점들을 확인
+        for j in graph[now]:
+            cost = distance[now] + j[1]
+            if cost < distance[j[0]]:
+                distance[j[0]] = cost
 
 dijkstra(start_V)
 
