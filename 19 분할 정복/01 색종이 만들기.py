@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
 
+# (x0, y0) 점을 기준으로 가로/세로가 2^k0 인 사각형 내에 0만 존재하는가?
 def Only_0(_x0, _y0, k0):
     for y in range(_y0, _y0 + 2**k0):
         for x in range(_x0, _x0 + 2**k0):
@@ -8,6 +9,7 @@ def Only_0(_x0, _y0, k0):
                 return False
     return True
 
+# (x0, y0) 점을 기준으로 가로/세로가 2^k0 인 사각형 내에 1만 존재하는가?
 def Only_1(_x0, _y0, k0):
     for y in range(_y0, _y0 + 2**k0):
         for x in range(_x0, _x0 + 2**k0):
