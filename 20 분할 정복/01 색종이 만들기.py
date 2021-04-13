@@ -46,25 +46,11 @@ while len(test_lst) != 0:       # test_lst가 비어있을 때까지 반복
             test_lst.append([x0 + 2**(k-1), y0, k-1])
             test_lst.append([x0 + 2**(k-1), y0 + 2**(k-1), k-1])
         else:
-            if data_set[y0][x0] == 0:
-                answer_lst.append([x0, y0, 1, 0])
-            else:
-                answer_lst.append([x0, y0, 1, 1])
-            
-            if data_set[y0+1][x0] == 0:
-                answer_lst.append([x0, y0+1, 1, 0])
-            else:
-                answer_lst.append([x0, y0+1, 1, 1])
-            
-            if data_set[y0][x0+1] == 0:
-                answer_lst.append([x0+1, y0, 1, 0])
-            else:
-                answer_lst.append([x0+1, y0, 1, 1])
-            
-            if data_set[y0+1][x0+1] == 0:
-                answer_lst.append([x0+1, y0+1, 1, 0])
-            else:
-                answer_lst.append([x0+1, y0+1, 1, 1])
+            answer_lst.append([x0, y0, 1, data_set[y0][x0]])
+            answer_lst.append([x0, y0+1, 1, data_set[y0+1][x0]])
+            answer_lst.append([x0+1, y0, 1, data_set[y0][x0+1]])
+            answer_lst.append([x0+1, y0+1, 1, data_set[y0+1][x0+1]])
+
     del(test_lst[0])  # 확인한 정사각형 삭제
 
 count0 = 0  # 0으로 채워진 정사각형 개수
