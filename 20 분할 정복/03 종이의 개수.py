@@ -9,7 +9,7 @@ def Is_in_Only_one_value(x0, y0, k, value):
                 return False
     return True
 
-# 종이의 개수를 확인해주는 함수
+# (main) 종이의 개수를 확인해주는 함수
 def number_of_papers(x0, y0, k):
     if k != 0:
         if Is_in_Only_one_value(x0, y0, k, -1):
@@ -38,7 +38,7 @@ k = 0
 while N != 1:
     N //= 3
     k += 1
-N = 3 ** k  # N 복구
+N = 3 ** k
 
 # 입력받은 데이터를 리스트에 저장
 data_set = []
