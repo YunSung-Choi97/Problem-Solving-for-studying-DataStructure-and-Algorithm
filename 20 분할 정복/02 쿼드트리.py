@@ -17,6 +17,7 @@ def Only_1(_x0, _y0, k0):
                 return False
     return True
 
+# (main) 쿼드트리 구조를 이용한 압축 함수
 def QuadTree(x0, y0, k0):
     if k0 != 0:
         if Only_0(x0, y0, k0):       # 0으로 채워져있는가?
