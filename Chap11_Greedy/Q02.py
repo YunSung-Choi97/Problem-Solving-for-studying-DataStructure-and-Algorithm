@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 S = input()
 size = len(S)
 
