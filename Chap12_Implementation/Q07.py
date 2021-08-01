@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 N = input()
 
 N_2 = len(N) // 2
