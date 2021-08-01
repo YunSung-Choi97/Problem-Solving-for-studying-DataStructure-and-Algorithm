@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 N = int(input())
 coins = list(map(int, input().split()))
 coins.sort()
