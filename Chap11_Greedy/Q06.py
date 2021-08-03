@@ -1,5 +1,4 @@
 def solution(food_times, k):
-
     if sum(food_times) <= k:
         answer = -1
 
@@ -24,5 +23,3 @@ def solution(food_times, k):
         answer = i + 1
 
     return answer
-
-print(solution([3, 1, 2], 5))
