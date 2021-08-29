@@ -1,5 +1,8 @@
+# 결과 : 시간 초과
+
 import sys
 input = sys.stdin.readline
+
 
 # 입력받기 및 저장
 N, M, K = map(int, input().split())
@@ -8,10 +11,10 @@ for _ in range(N):
     D, H = map(int, input().split())
     data.append((D, H))
 
+
 # 화장실 이용 전 필요한 정보들
 location = (K % M, K // M)  # 데카의 위치
 count = 0  # 데카와 같은 줄에서 화장실은 이용한 사원의 수
-
 
 data_D = [[] for _ in range(M)]
 data_H = [[] for _ in range(M)]
@@ -26,8 +29,7 @@ for i in range(M):
         first_line_D[i] = data_D[i][0]
         first_line_H[i] = data_H[i][0]
 
-num = [0 for i in range(M)]
-INF = 1e6
+line_count = [0 for i in range(M)]
 
 
 # 화장실 이용
@@ -41,8 +43,6 @@ for i in range(N):
             if first_line_H[key] > H_max:
                 H_max = first_line_H[key]
                 idx = key
-    debug = 0
-    debug = 0
 
     if idx == location[0]:  # 데카와 같은 줄 사람인지 확인
         count += 1
@@ -51,15 +51,16 @@ for i in range(N):
             break
     
     # 화장실 이용한 사람은 줄에서 제거
+    line_count[idx] += 1
+    if line_count[idx] >= len(data_D[idx]):
+        first_line_D[idx] = -1
+        first_line_H[idx] = -1
+    else:
+        first_line_D[idx] = data_D[idx][line_count[idx]]
+        first_line_H[idx] = data_H[idx][line_count[idx]]
+    # dict로 하기 전 list구조로 하였을때 작성한 코드
     # del new_data[idx][0]
     # if len(new_data[idx]) == 0:
     #     del first_line[idx]
     # else:
     #     first_line[idx] = new_data[idx][0]
-    num[idx] += 1
-    if num[idx] >= len(data_D[idx]):
-        first_line_D[idx] = -1
-        first_line_H[idx] = -1
-    else:
-        first_line_D[idx] = data_D[idx][num[idx]]
-        first_line_H[idx] = data_H[idx][num[idx]]
