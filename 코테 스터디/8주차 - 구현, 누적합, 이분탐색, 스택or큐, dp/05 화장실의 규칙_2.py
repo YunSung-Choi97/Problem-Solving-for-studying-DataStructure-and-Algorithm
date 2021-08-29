@@ -1,5 +1,8 @@
+# 결과 : 시간 초과
+
 import sys
 input = sys.stdin.readline
+
 
 # 입력받기 및 저장
 N, M, K = map(int, input().split())
@@ -7,6 +10,7 @@ data = []
 for _ in range(N):
     D, H = map(int, input().split())
     data.append((D, H))
+
 
 # 화장실 이용 전 필요한 정보들
 location = (K % M, K // M)  # 데카의 위치
@@ -23,8 +27,9 @@ for i in range(M):
     if len(new_data[i]) != 0:
         first_line[i] = new_data[i][0]
 
-num = [0 for i in range(M)]
-INF = 1e6
+line_count = [0 for i in range(M)]  # 줄 별로 화장실 이용한 사원 수
+INF = 1e6  # 줄에 모든 사원이 화장실을 이용한 경우에 min값에서 발견되지 않도록 우선순위값 범위를 벗어난 무한값 입력
+
 
 # 화장실 이용
 for i in range(N):
@@ -37,13 +42,8 @@ for i in range(N):
             break
     
     # 화장실 이용한 사람은 줄에서 제거
-    # del new_data[idx][0]
-    # if len(new_data[idx]) == 0:
-    #     del first_line[idx]
-    # else:
-    #     first_line[idx] = new_data[idx][0]
-    num[idx] += 1
-    if num[idx] == len(new_data[idx]):
+    line_count[idx] += 1
+    if line_count[idx] == len(new_data[idx]):
         first_line[idx] = INF
     else:
-        first_line[idx] = new_data[idx][num[idx]]
+        first_line[idx] = new_data[idx][line_count[idx]]
