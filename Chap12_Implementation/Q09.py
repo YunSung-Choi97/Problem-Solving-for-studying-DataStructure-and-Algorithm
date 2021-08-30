@@ -1,3 +1,6 @@
+# 미완.
+# 약수로 할 필요가 없음. 뒤에 남는 부분은 붙여서 구현필요.
+
 def solution(s):
     # 전체 길이의 약수 찾기
     len_div = []
@@ -13,7 +16,6 @@ def solution(s):
         for i in range(0, len(s), div):
             s_div.append(s[i:i+div])
         
-        # 
         result = ''
         count = 1
         for i in range(1, len(s_div)):
