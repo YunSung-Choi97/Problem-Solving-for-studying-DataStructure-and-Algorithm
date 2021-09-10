@@ -15,7 +15,6 @@ def find_cycle(x1, y1, x2, y2, color):
                 return False
             if data[y][x2] != color:
                 return False
-        
         return True
 
 N, M = map(int, input().split())
