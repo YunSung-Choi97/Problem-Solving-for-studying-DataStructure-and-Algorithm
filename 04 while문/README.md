@@ -1,5 +1,13 @@
 # 04 while문
 
+|번호|문제 제목|나의 풀이|
+|---|---|---|
+[10952](https://www.acmicpc.net/problem/10952)|A+B - 5|[code](01_10952.py)
+[10951](https://www.acmicpc.net/problem/10951)|A+B - 4|[code](02_10951.py)
+[1110](https://www.acmicpc.net/problem/1110)|더하기 사이클|[code](03_1110.py)
+
+---
+
 ## Summary
 
 ### **반복문**
@@ -31,55 +39,3 @@
 
 > 에러가 발생할 가능성이 있는 코드를 try의 코드 블록안에 넣어줌으로서, 에러가 발생했을 때 에러표시와 프로그램 종료가 아닌 원하는 수행동작을 except의 코드 블록에 넣어 에러에 대한 처리가 가능하다.<br>
  추가로, raise를 이용하면 원하는 에러를 발생시킬수 있다. 그리고 except 아래에 else/finally구문을 이용하여 에러가 발생하지 않은 경우/예외 발생 여부와 관계없이 모든 경우에 대하여 수행할 동작을 작성해줄 수 있다.
-
-<br>
-
----
-
-# *Source Code*
-
-## 01 A + B (5)
-
-```python
-while True:  # 무한 반복
-    A, B = map(int, input().split())  # 
-    if A == 0 & B == 0:  # 무한 루프를 빠져나오는 조건
-        break
-    print(A+B)
-```
-
-## 02 A + B (4)
-
-```python
-while True:  # 무한 반복
-    
-    # 무한 루프의 종료조건이 문제에 제시되었지 않았기 때문에, 에러가 발생하기 전까지는 프로그램이 동작하도록 해주었다.
-    # try, except : 에러가 발생할 경우에 대한 처리
-    try:
-        A, B = map(int, input().split())
-        print(A+B)
-    except:
-        break
-```
-
-## 03 더하기 사이클
-
-```python
-initial_num = int(input())  # initial_num : 사용자로부터 입력받을 N.
-
-count = 1  # count : 결과로 출력할 사이클 수
-while True:  # 무한 반복
-    
-    # num을 초기화시켜준다
-    if count == 1:
-        num = initial_num
-    else:
-        num = new_num
-    num10 = num // 10  # num10 : num의 10의 자리 수
-    num1 = num % 10  # num1 : num의 1의 자리 수
-    new_num = 10 * num1 + (num10 + num1) % 10  # new_num : num으로 만든 새로운 수
-    if initial_num == new_num:  # 반복문 종료 조건. 입력받은 수가 새로운 수와 같아질 때
-        print(count)
-        break
-    count += 1  # 사이클 수는 반복문이 수행될때마다 1씩 증가
-```
