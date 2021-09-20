@@ -1,18 +1,18 @@
 # 01 입출력과 사칙연산
 
-|번호|문제 제목|나의 풀이|tag|Retry|
-|---|---|---|---|---|
-[2557](https://www.acmicpc.net/problem/2557)|Hello World|[01 Hellow World](01-Hello-World.py)|Implementation|
-[10718](https://www.acmicpc.net/problem/10718)|We love kriii|[02 We love kriii](02-We-love-kriii.py)|Implementation|True
-[10171](https://www.acmicpc.net/problem/10171)|고양이|[03 고양이](03-고양이.py)|Implementation|
-[10172](https://www.acmicpc.net/problem/10172)|개|[04 개](04-개.py)|Implementation|
-[1000](https://www.acmicpc.net/problem/1000)|A+B|[05 A+B](05-A+B.py)|Mathematics, Implementation, Arithmetic|
-[1001](https://www.acmicpc.net/problem/1001)|A-B|[06 A-B](06-A-B.py)|Mathematics, Implementation, Arithmetic|
-[10998](https://www.acmicpc.net/problem/10998)|AxB|[07 AxB](07-AxB.py)|Mathematics, Implementation, Arithmetic|
-[1008](https://www.acmicpc.net/problem/1008)|A/B|[08 A/B](08-A_B.py)|Mathematics, Implementation, Arithmetic|
-[10869](https://www.acmicpc.net/problem/10869)|사칙연산|[09 사칙연산](09-사칙연산.py)|Mathematics, Implementation, Arithmetic|
-[10430](https://www.acmicpc.net/problem/10430)|나머지|[10 나머지](10-나머지.py)|Mathematics, Implementation, Arithmetic|
-[2588](https://www.acmicpc.net/problem/2588)|곱셈|[11 곱셈](11-곱셈.py)|Mathematics, Arithmetic|
+|번호|문제 제목|나의 풀이|
+|---|---|---|
+[2557](https://www.acmicpc.net/problem/2557)|Hello World|[code](01_2557.py)
+[10718](https://www.acmicpc.net/problem/10718)|We love kriii|[code](02_10718.py)
+[10171](https://www.acmicpc.net/problem/10171)|고양이|[code](03_10171.py)
+[10172](https://www.acmicpc.net/problem/10172)|개|[code](04_10172.py)
+[1000](https://www.acmicpc.net/problem/1000)|A+B|[code](05_1000.py)
+[1001](https://www.acmicpc.net/problem/1001)|A-B|[code](06_1001.py)
+[10998](https://www.acmicpc.net/problem/10998)|AxB|[code](07_10998.py)
+[1008](https://www.acmicpc.net/problem/1008)|A/B|[code](08_1008.py)
+[10869](https://www.acmicpc.net/problem/10869)|사칙연산|[code](09_10869.py)
+[10430](https://www.acmicpc.net/problem/10430)|나머지|[code](10_10430.py)
+[2588](https://www.acmicpc.net/problem/2588)|곱셈|[code](11_2588.py)
 
 ---
 
