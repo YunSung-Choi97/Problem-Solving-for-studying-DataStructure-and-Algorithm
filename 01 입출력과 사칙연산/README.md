@@ -1,5 +1,21 @@
 # 01 입출력과 사칙연산
 
+|번호|문제 제목|나의 풀이|tag|Retry|
+|---|---|---|---|---|
+[2557](https://www.acmicpc.net/problem/2557)|Hello World|[01 Hellow World]('01 Hello World.py')|Implementation|
+[10718](https://www.acmicpc.net/problem/10718)|We love kriii|[02 We love kriii]('02 We love kriii.py')|Implementation|True
+[10171](https://www.acmicpc.net/problem/10171)|고양이|[03 고양이]('03 고양이.py')|Implementation|
+[10172](https://www.acmicpc.net/problem/10172)|개|[04 개]('04 개.py')|Implementation|
+[1000](https://www.acmicpc.net/problem/1000)|A+B|[05 A+B]('05 A+B.py')|Mathematics, Implementation, Arithmetic|
+[1001](https://www.acmicpc.net/problem/1001)|A-B|[06 A-B]('06 A-B.py')|Mathematics, Implementation, Arithmetic|
+[10998](https://www.acmicpc.net/problem/10998)|AxB|[07 AxB]('07 AxB.py')|Mathematics, Implementation, Arithmetic|
+[1008](https://www.acmicpc.net/problem/1008)|A/B|[08 A/B]('08 A_B.py')|Mathematics, Implementation, Arithmetic|
+[10869](https://www.acmicpc.net/problem/10869)|사칙연산|[09 사칙연산]('09 사칙연산.py')|Mathematics, Implementation, Arithmetic|
+[10430](https://www.acmicpc.net/problem/10430)|나머지|[10 나머지]('10 나머지.py')|Mathematics, Implementation, Arithmetic|
+[2588](https://www.acmicpc.net/problem/2588)|곱셈|[11 곱셈]('11 곱셈.py')|Mathematics, Arithmetic|
+
+---
+
 ## Summary
 
 ### **함수**
@@ -7,7 +23,7 @@
 - print()
 
 > 입력받은 인자를 화면에 출력해 주는 함수<br>
- ','를 이용해 여러 파라미터를 동시에 받을 수 있다.<br>
+ ','로 구분하여 여러 파라미터를 동시에 출력할 수 있다.<br>
  sep : print(value1, value2, sep=value3)와 같이 사용하여 val1과 val2를 val3로 구분하여 출력할 수 있다. 기본값은 ' '(공백)이다.<br>
  end : print(value1, end=value2)와 같이 사용하면 val1을 출력한 후(모든 입력 인자를 출력한 후) value2을 출력한다. 기본값은 '\n'(줄바꿈)이다.<br>
 
@@ -27,138 +43,6 @@
 
 - .split()
 
-> 문자열을 나누어준다.<br>
+> 구분자를 기준으로 문자열을 나누어 리스트형으로 반환해준다.<br>
  기본값으로 ' '(공백), '\t'(tab), '\n'(줄바꿈)을 기준으로 문자열을 나눠 리스트 형태로 리턴해준다.<br>
  .split(value1)과 같이 사용하면 val1이 구분자가 된다.<br>
-
-<br>
-
----
-
-# *Source Code*
-
-## 01 Hello World
-
-```python
-print("Hello World!") # print(출력할 내용)
-```
-
-## 02 We love Krill
-
-```python
-print("강한친구 대한육군\n강한친구 대한육군")  # \n을 통해 줄바꿈 가능
-```
-
-## 03 고양이
-
-```python
-# 큰 따옴표로 표현된 문자열 내에 있는 큰 따옴표 앞에는 \를 붙여주어야 한다
-# 작은 따옴표로 표현된 문자열 내에 있는 작은 따옴표 앞에는 \를 붙여주어야 한다.
-# 큰 따옴표/작은 따옴표로 표현된 문자열 내에 있는 작은 따옴표/큰 따옴표로 표현된 문자는 그냥 출력된다.
-# 출력할 문자열이 \라면 일반적으로 \\로 표현해주어야 한다. (뒤에 글자가 ', ", n, t 등의 표현일 수 있기때문에)
-# 문자열의 마지막 글자로 혹은 줄바꿈 앞에 \를 표현할 때에도 \\로 표현해주어야한다.
-print("\    /\\")
-print(" )  ( ')")
-print("(  /  )")
-print(" \(__)|")  # print안의 문자열을  \\(__)| 로 바꾸더라도 동일한 결과 출력
-
-# print함수 내에서 """출력할 문자열"""의 형태로 사용하게 되면 여러줄의 출력물의 출력할 수 있다.
-# print("""\    /\\
-#  )  ( ')
-# (  /  )
-#  \(__)|""")
-```
-
-## 04 개
-
-```python
-# 큰 따옴표로 표현된 문자열 내에 있는 큰 따옴표 앞에는 \를 붙여주어야 한다
-# 작은 따옴표로 표현된 문자열 내에 있는 작은 따옴표 앞에는 \를 붙여주어야 한다.
-# 큰 따옴표/작은 따옴표로 표현된 문자열 내에 있는 작은 따옴표/큰 따옴표로 표현된 문자는 그냥 출력된다.
-# 출력할 문자열이 \라면 일반적으로 \\로 표현해주어야 한다. (뒤에 글자가 ', ", n, t 등의 표현일 수 있기때문에)
-# 문자열의 마지막 글자로 혹은 줄바꿈 앞에 \를 표현할 때에도 \\로 표현해주어야한다.
-print("|\_/|")  # print안의 문자열을 |\\_/| 로 바꾸더라도 동일한 결과 출력
-print("|q p|   /}")
-print("( 0 )\"\"\"\\")
-print("|\"^\"`    |")
-print("||_/=\\\\__|")
-
-# print함수 내에서 """출력할 문자열"""의 형태로 사용하게 되면 여러줄의 출력물의 출력할 수 있다.
-# print("""|\_/|
-# |q p|   /}
-# ( 0 )\"\"\"\\
-# |\"^\"`    |
-# ||_/=\\\\__|""")
-```
-
-## 05 A+B
-
-```python
-# split()을 이용해 문자열을 공백과 줄바꿈을 기준으로 분리
-# map()을 이용해 데이터들을 mapping해줌
-A, B = map(int, input().split())
-print(C)
-```
-
-## 06 A-B
-
-```python
-# split()을 이용해 문자열을 공백과 줄바꿈을 기준으로 분리
-# map()을 이용해 데이터들을 mapping해줌
-A, B = map(int, input().split())
-print(A-B)
-```
-
-## 07 AxB
-
-```python
-# split()을 이용해 문자열을 공백과 줄바꿈을 기준으로 분리
-# map()을 이용해 데이터들을 mapping해줌
-A, B = map(int, input().split())
-print(A*B)
-```
-
-## 08 A/B
-
-```python
-# split()을 이용해 문자열을 공백과 줄바꿈을 기준으로 분리
-# map()을 이용해 데이터들을 mapping해줌
-A, B = map(int, input().split())
-print(A/B)
-```
-
-## 09 사칙연산
-
-```python
-A, B = map(int, input().split())
-print(A+B)
-print(A-B)
-print(A*B)
-print(A//B)  # 정수 / 정수에서 몫만 필요할 때에는 // 를 사용
-print(A%B)  # 정수 / 정수에서 나머지만 필요할 때에는 % 를 사용
-```
-
-## 10 나머지
-
-```python
-A, B, C = map(int, input().split())
-
-# 일반적인 연산 순서가 반영되어있다.
-print((A+B)%C)
-print(((A%C)+(B%C))%C)
-print((A*B)%C)
-print(((A%C)*(B%C))%C)
-```
-
-## 11 곱셈
-
-```python
-num1 = int(input())
-num2 = int(input())
-
-# 뒤에 수를 원하는 자리를 고려하여 %연산자를 이용해 앞을 자르고, //연산자를 이용해 뒤를 잘라주었다.
-print(num1 * (num2%10))
-print(num1 * (num2%100//10))
-print(num1 * (num2%1000//100))
-print(num1 * num2)
-```
