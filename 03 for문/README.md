@@ -1,5 +1,21 @@
 # 03 for문
 
+|번호|문제 제목|나의 풀이|
+|---|---|---|
+[2739](https://www.acmicpc.net/problem/2739)|구구단|[code](01_2739.py)
+[10950](https://www.acmicpc.net/problem/10950)|A+B - 3|[code](02_10950.py)
+[8393](https://www.acmicpc.net/problem/8393)|합|[code](03_8393.py)
+[15552](https://www.acmicpc.net/problem/15552)|빠른 A+B|[code](04_15552.py)
+[2741](https://www.acmicpc.net/problem/2741)|N 찍기|[code](05_2741.py)
+[2742](https://www.acmicpc.net/problem/2742)|기찍 N|[code](06_2742.py)
+[11021](https://www.acmicpc.net/problem/11021)|A+B - 7|[code](07_11021.py)
+[11022](https://www.acmicpc.net/problem/11022)|A+B - 8|[code](08_11022.py)
+[2438](https://www.acmicpc.net/problem/2438)|별 찍기 - 1|[code](09_2438.py)
+[2439](https://www.acmicpc.net/problem/2439)|별 찍기 - 2|[code](10_2439.py)
+[10871](https://www.acmicpc.net/problem/10871)|X보다 작은 수|[code](11_10871.py)
+
+---
+
 ## Summary
 
 ### **함수**
@@ -73,126 +89,4 @@
 
 >>> print("{{}}를 포매팅과 {} 출력하기".format("함께"))
 {}를 포매팅과 함께 출력하기
-```
-
-<br>
-
----
-
-# *Source Code*
-
-## 01 구구단
-
-```python
-N = int(input())  # N : 구구단의 단을 입력 받음
-
-for i in range(1, 10):  # i에 1, 2, 3, ... , 8, 9까지 할당하며 아래의 동작 수행
-    print("{} * {} = {}".format(N, i, N*i))  # {}에 format()내의 값들을 차례로 하나씩 넣어줌
-```
-
-## 02 A+B (3)
-
-```python
-T = int(input())  # T : 테이스 케이스의 개수를 입력받음
-
-for i in range(T):  # T번 반복
-    A, B = map(int, input().split())  # A, B : 덧셈 연산을 수행할 두 정수를 입력받음
-    print(A+B)
-```
-
-## 03 합
-
-```python
-n = int(input())  # n : 합할 수의 마지막 값을 입력받음
-result = 0  # result : 합한 최종 결과
-
-for i in range(1, n+1):  # 1부터 n까지.
-    result += i  # result = result + i
-    
-print(result)
-```
-
-## 04 빠른 A+B
-
-```python
-# input() 보다 sys.stdin.readline()이 빠르다
-# 시간 복잡도가 커질수록 차이는 커지게 된다.
-
-import sys  # sys 모듈을 불러옴
-
-T = int(input())  # T : 테스트 케이스의 개수
-
-for i in range(T):  # T번 반복
-    n, m = map(int, sys.stdin.readline().split())  # n, m : 한 줄씩 문자열을 입력받아 공백, tab, 줄바꿈을 기준으로 나눠 할당
-    print(n+m)
-```
-
-## 05 N 찍기
-
-```python
-N = int(input())  # N : 출력하고자하는 자연수의 마지막값
-
-for i in range(1, N+1):  # N번 반복 (i는 1부터 N까지)
-    print(i)
-```
-
-## 06 기찍 N
-
-```python
-N = int(input())  # N : 출력하고자하는 자연수의 마지막값
-
-for i in range(N):  # N번 반복 (i는 0부터 N-1까지)
-    print(N - i)
-
-# for i in range(N, 0, -1):  # N번 반복 (i는 N부터 1까지 -1씩 변화)
-#     print(i)
-```
-
-## 07 A+B (7)
-
-```python
-T = int(input())  # T : 테이트 케이스 개수
-
-for i in range(1, T+1):  # T번 반복. i : 1 ~ T
-    n, m = map(int, input().split())
-    print("Case #{}: {}".format(i, n+m))  # " ".format() : 문자열에 .format을 통해 {}부분에 원하는 내용을 삽입가능
-```
-
-## 08 A+B (8)
-
-```python
-T = int(input())  # T : 테스트 케이스 개수
-
-for i in range(1, T+1):  # T번 반복. i : 1 ~ T
-    n, m = map(int, input().split())
-    print("Case #{}: {} + {} = {}".format(i, n, m, n+m))  # " ".format() : 문자열에 .format을 통해 {}부분에 원하는 내용을 삽입가능
-```
-
-## 09 별 찍기 (1)
-
-```python
-N = int(input())  # N : 출력할 별의 줄 수
-
-for i in range(1, N+1):  # N번 반복. i : 1 ~ N
-    print("{}".format("*"*i))  # " ".format() : 문자열에 .format을 통해 {}부분에 원하는 내용을 삽입가능
-```
-
-## 10 별 찍기 (2)
-
-```python
-N = int(input())  # N : 출력할 별의 줄 수
-
-for i in range(1, N+1):  # N번 반복. i : 1 ~ N
-    print("{}".format(" "*(N-i) + "*"*i))  # " ".format() : 문자열에 .format을 통해 {}부분에 원하는 내용을 삽입가능
-```
-
-## 11 X보다 작은 수
-
-```python
-N, X = map(int, input().split())  # N, X : 입력받을 정수의 개수, 기준이 되는 수
-lst = list(map(int, input().split()))  # 입력받은 수들을 lst에 할당
-
-for i in range(N):  # N번 반복
-    if lst[i] < X:
-        print(lst[i], end = " ")  # 출력 후 줄바꿈이 아닌 공백을 출력
 ```
