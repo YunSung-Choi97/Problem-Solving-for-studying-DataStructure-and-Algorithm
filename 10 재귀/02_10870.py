@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-def fibonacci(n):
+def fibonacci(n):  # n번째 피보나치 수를 리턴하는 함수
     if n == 0:
         return 0
     elif n == 1:

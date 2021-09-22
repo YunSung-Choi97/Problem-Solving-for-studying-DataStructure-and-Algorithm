@@ -1,6 +1,3 @@
-import sys
-input = sys.stdin.readline
-
 def hanoi_top(n):
     if n == 1:
         process = [[1, 3]]

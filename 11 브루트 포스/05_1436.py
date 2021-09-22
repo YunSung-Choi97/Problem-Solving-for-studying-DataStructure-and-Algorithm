@@ -1,10 +1,6 @@
-import sys
-input = sys.stdin.readline
-
 N = int(input())
 
-positional_number = [str(i) for i in range(10)]
-
+positional_number = [str(i) for i in range(10)]  # 0 ~ 9 : 각각의 자릿수에 사용
 target_numbers = {'666'}  # 666이 포함된 숫자를 저장할 집합 (자릿수의 길이에 따라 업데이트됨)
 
 while True:

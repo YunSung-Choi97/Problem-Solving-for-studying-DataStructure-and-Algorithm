@@ -8,7 +8,6 @@ def make_star(n):
 
     else:  # 크기가 3X3이 아닌 경우
         stars = [[' ' for j in range(n)] for i in range(n)]
-        
 
         k = n // 3
         mini_stars = make_star(k)  # 한 사이즈 작은 별(1/3 크기의 별)이 8개가 나타난다.

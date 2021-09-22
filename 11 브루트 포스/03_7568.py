@@ -12,4 +12,4 @@ for kg, cm in body_data:  # 한 명씩 본인보다 더 무겁고 키가 큰 사
     for other_kg, other_cm in body_data:
         if kg < other_kg and cm < other_cm:
             big += 1
-    print(big+1, end=' ')
+    print(big + 1, end=' ')  # 덩치 등수 = 덩치 큰 사람수 + 1
