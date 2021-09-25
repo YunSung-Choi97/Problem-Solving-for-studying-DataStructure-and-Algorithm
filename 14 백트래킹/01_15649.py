@@ -1,6 +1,11 @@
+'''미리 생각하기 [Try 2]
+1. 입력받기 (N, M)
+2. 정답(출력할 줄)을 한 자리씩 선정하기 (BackTracking)
+'''
+# N, M 입력받기
 N, M = map(int, input().split())
 
-answer = []
+answer = []  # 출력할 정답을 저장할 공간
 def BT():
     # M개의 숫자를 선택
     if len(answer) == M:
@@ -17,6 +22,10 @@ def BT():
 
 BT()
 
+'''미리 생각하기 [Try 1]
+1. 주어진 정보 입력받기 (N, M)
+2. itertools의 permutations를 이용
+'''
 ''' itertools의 permutations를 호출해 순열을 만들어 출력
 from itertools import permutations
 
