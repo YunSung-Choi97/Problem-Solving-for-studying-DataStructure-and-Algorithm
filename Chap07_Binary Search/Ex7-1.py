@@ -17,3 +17,8 @@ array = input().split()
 
 # 순차 탐색 수행 결과 출력
 print(sequential_search(n, target, array))
+
+'''input test case
+5 Dongbin
+Hanul Jonggu Dongbin Taeil Sangwook
+'''
