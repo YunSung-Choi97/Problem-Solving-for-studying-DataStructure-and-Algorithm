@@ -1,6 +1,7 @@
 # LIS (Longest Increasing Sequence) : 가장 긴 증가하는 부분 수열
 # https://prod.velog.io/@yanghl98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-LIS-Longest-Increasing-Sequence
 # DP방식은 시간초과가 예상되어 Lower Bound방식으로 해결
+# 14003번 문제가 길이가 아닌 부분수열을 해결하는 문제
 
 def binary_search(target):  # Index 찾기
     if len(ans) == 0:
