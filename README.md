@@ -21,6 +21,10 @@
     > .append(), .sort() / sorted(), .index() / .find(), .count()
   - [딕셔너리](#딕셔너리)
     > .keys() / .values() / .items(), .get(), .update() / .setdefault(), .pop() / .popitem(), .clear(), .copy()
+  - [순열과 조합](#순열과-조합)
+    > 순열 / 조합 / 중복 순열 / 중복 조합
+  - [기타](#기타)
+    > global
 - [Algorithm Summary](#algorithm-summary)
   - [소수](#소수)
   - [팩토리얼](#팩토리얼)
@@ -47,9 +51,9 @@
 
 만족스럽지 못하게 푼 문제 (오랜 시간, 비효율적인 방식, 해결 아이디어 참고), 못 푼 문제들을 다시 풀어보기 위해 기록해 놓은 공간
 
-|위치|번호|문제 제목|tag|
-|---|---|---|---|
-10단계 4번|[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|	Recursion
+|위치|번호|문제 제목|tag|Memo|
+|---|---|---|---|---|
+10단계 4번|[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|Recursion|
 
 ## Syntax Summary
 
@@ -362,6 +366,34 @@ list, tuple, dict, string 등을 입력받아 인덱스와 값을 리턴하고, 
 
  > 딕셔너리를 복사하여 반환하는 함수.<br>
  같은 객체가 되지 않으며 복사할 때 사용된다.
+
+<br>
+
+### 순열과 조합
+
+- 순열 / 조합 / 중복 순열 / 중복 조합
+
+> itertools 라이브러리을 이용하면 순열/조합/중복 순열/중복 조합을 간단히 구현해낼 수 있다.
+
+```python
+from itertools import permutations  # 순열
+from itertools import combinations  # 조합
+from itertools import product, repeat  # 중복 순열
+from itertools import combinations_with_replacement  # 중복 조합
+
+permutations(range(1, N+1), M)  # N개 중 M개를 정렬
+combinations(range(1, N+1), M)  # N개 중 M개를 선택
+product(range(1, N+1), repeat=M)  # N개 중 M개를 정렬 (중복 허용)
+combinations_with_replacement(range(1, N+1), M)  # N개 중 M개를 선택 (중복 허용)
+```
+
+<br>
+
+### 기타
+
+- global
+
+> 지역변수를 전역변수로 사용하고자 할때 global (변수명)과 같이 작성해주면 된다.
 
 <br>
 
