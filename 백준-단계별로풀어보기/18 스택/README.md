@@ -1,0 +1,1 @@
+[14889](https://www.acmicpc.net/problem/14889)|스타트와 링크|[code](07-확인-파일.py)|
