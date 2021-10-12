@@ -14,25 +14,49 @@
 
 ### Maaaaaaaaaze
 
-
+완전탐색, BFS
 
 <br>
 
 ### 최종 순위
 
+위상 정렬
+```python
+# 위상정렬
+def topology_sort():
+    result = []
+    queue = deque()
 
+    # 진입차수가 0인 노드를 큐에 삽입
+    for i in range(1, n+1):
+        if indegree[i] == 0:
+            queue.append(i)
+    
+    # 큐가 빌 때까지
+    while queue:
+        now = queue.popleft()
+        result.append(now)
+
+        # 연결된 노드들 진입차수 -1
+        for i in graph[now]:
+            indegree[i] -= 1
+            if indegree[i] == 0:
+                queue.append(i)
+    
+    return result
+```
 
 <br>
 
 ### 놀이 공원
 
-
+이분 탐색
 
 <br>
 
 ### 구간 합 구하기
 
-
+세그먼트 트리에 대한 개념이 부족하여 dict()를 이용하여 pypy3로 해결.
 
 <br>
 
