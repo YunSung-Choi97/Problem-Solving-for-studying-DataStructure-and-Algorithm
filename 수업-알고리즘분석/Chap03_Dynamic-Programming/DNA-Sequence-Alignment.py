@@ -28,10 +28,9 @@ def find_minindex(i, j):
 # a = ['A', 'A', 'C', 'A', 'G', 'T', 'T', 'A', 'C', 'C']
 # b = ['T', 'A', 'A', 'G', 'G', 'T', 'C', 'A']
 
-
 # Test case 2
-a=['C','A','C','A','T','T','A','C','C']
-b=['C','A','C','G','T','C','C','A']
+a = ['C', 'A', 'C', 'A', 'T', 'T', 'A', 'C', 'C']
+b = ['C', 'A', 'C', 'G', 'T', 'C', 'C', 'A']
 
 m = len(a)
 n = len(b)
@@ -71,7 +70,7 @@ for row in table:
         print('{:3}'.format(value), end=' ')
     print()
 
-print()
+print()  # 줄바꿈으로 출력 구분
 
 x, y = 0, 0
 # 경로 출력
