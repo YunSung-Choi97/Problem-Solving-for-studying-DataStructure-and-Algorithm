@@ -56,7 +56,7 @@ def print_preOrder(root):
 # p = [0, 0.375, 0.375, 0.125, 0.125]
 
 
-# # Test case 2
+# Test case 2
 key = [" ", "A", "B", "C", "D", "E"]
 p = [0, 3/15, 1/15, 2/15, 5/15, 4/15]
 
@@ -88,12 +88,12 @@ for row in r:
         print(value, end=' ')
     print()
 
-print()
+print()  # 줄바꿈으로 결과 구분
 
 root = tree(key, r, 1, n)
 
 print_inOrder(root)  # 주어진 utility모듈의 함수 사용
 
-print()
+print()  # 줄바꿈으로 결과 구분
 
 print_preOrder(root)  # 주어진 utility모듈의 함수 사용
