@@ -22,12 +22,9 @@ def partition(s, low, high):
     return pivot_idx
 
 
-# 실습 강의자료에서 주어진 Test case
-'''Test case
-s = [3, 5, 2, 9, 10, 14, 4, 8]
-quickSort(s, 0, 7)
-print(s)
-'''
+# Test case 1
+# s = [3, 5, 2, 9, 10, 14, 4, 8]
+# quickSort(s, 0, 7)
 
 # 난수를 뽑기위해 random 모듈 사용
 import random
