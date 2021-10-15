@@ -29,7 +29,9 @@ def printMatrix(matrix):
             print('{:4}'.format(matrix[i][j]),end=" ")
         print()
 
-d = [5, 2, 3, 4, 6, 7, 8]  # 문제에서 주어진 행렬 각각의 크기
+# Test case 1
+d = [5, 2, 3, 4, 6, 7, 8]  # 행렬 각각의 크기
+
 size = len(d)  # 행렬 개수 + 1
 INF = int(1e8)  # min값을 구할 때 계속해서 0이 구해지는 것을 막기위한 무한값
 M = [[0 for j in range(size)] for i in range(size)]
