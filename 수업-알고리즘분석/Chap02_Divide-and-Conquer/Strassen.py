@@ -13,6 +13,7 @@ def strassen(n, A, B, C):
     B21 = np.array([[B[rows][cols] for cols in range(half_n)] for rows in range(half_n, n)])
     B22 = np.array([[B[rows][cols] for cols in range(half_n, n)] for rows in range(half_n, n)])
 
+    # 동작 확인
     # for submatrix in [A11, A12, A21, A22, B11, B12, B21, B22]:
     #     print(submatrix)
 
