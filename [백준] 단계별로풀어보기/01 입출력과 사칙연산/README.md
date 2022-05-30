@@ -2,17 +2,19 @@
 
 |번호|문제 제목|나의 풀이|
 |---|---|---|
-[2557](https://www.acmicpc.net/problem/2557)|Hello World|[code](01_2557.py)
-[10718](https://www.acmicpc.net/problem/10718)|We love kriii|[code](02_10718.py)
-[10171](https://www.acmicpc.net/problem/10171)|고양이|[code](03_10171.py)
-[10172](https://www.acmicpc.net/problem/10172)|개|[code](04_10172.py)
-[1000](https://www.acmicpc.net/problem/1000)|A+B|[code](05_1000.py)
-[1001](https://www.acmicpc.net/problem/1001)|A-B|[code](06_1001.py)
-[10998](https://www.acmicpc.net/problem/10998)|AxB|[code](07_10998.py)
-[1008](https://www.acmicpc.net/problem/1008)|A/B|[code](08_1008.py)
-[10869](https://www.acmicpc.net/problem/10869)|사칙연산|[code](09_10869.py)
-[10430](https://www.acmicpc.net/problem/10430)|나머지|[code](10_10430.py)
-[2588](https://www.acmicpc.net/problem/2588)|곱셈|[code](11_2588.py)
+[2557](https://www.acmicpc.net/problem/2557)|Hello World|[code](2557.py)
+[10718](https://www.acmicpc.net/problem/10718)|We love kriii|[code](10718.py)
+[10171](https://www.acmicpc.net/problem/10171)|고양이|[code](10171.py)
+[25083](https://www.acmicpc.net/problem/25083)|새싹|[code](25083.py)
+[1000](https://www.acmicpc.net/problem/1000)|A+B|[code](1000.py)
+[1001](https://www.acmicpc.net/problem/1001)|A-B|[code](1001.py)
+[10998](https://www.acmicpc.net/problem/10998)|AxB|[code](10998.py)
+[1008](https://www.acmicpc.net/problem/1008)|A/B|[code](1008.py)
+[10869](https://www.acmicpc.net/problem/10869)|사칙연산|[code](10869.py)
+[10926](https://www.acmicpc.net/problem/10926)|??!|[code](10926.py)
+[18108](https://www.acmicpc.net/problem/18108)|사칙연산|[code](18108.py)
+[10430](https://www.acmicpc.net/problem/10430)|나머지|[code](10430.py)
+[2588](https://www.acmicpc.net/problem/2588)|곱셈|[code](2588.py)
 
 ---
 
