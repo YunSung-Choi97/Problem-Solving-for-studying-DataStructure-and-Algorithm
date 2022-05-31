@@ -1,14 +1,14 @@
-# 05 1차원 배열
+# 04 1차원 배열
 
 |번호|문제 제목|나의 풀이|
-|---|---|---|
-[10818](https://www.acmicpc.net/problem/10818)|최소, 최대|[code](01_10818.py)
-[2562](https://www.acmicpc.net/problem/2562)|최댓값|[code](02_2562.py)
-[2577](https://www.acmicpc.net/problem/2577)|숫자의 개수|[code](03_2577.py)
-[3052](https://www.acmicpc.net/problem/3052)|나머지|[code](04_3052.py)
-[1546](https://www.acmicpc.net/problem/1546)|평균|[code](05_1546.py)
-[8958](https://www.acmicpc.net/problem/8958)|OX퀴즈|[code](06_8958.py)
-[4344](https://www.acmicpc.net/problem/4344)|평균은 넘겠지|[code](07_4344.py)
+|:---:|---|:---:|
+[10818](https://www.acmicpc.net/problem/10818)|최소, 최대|[python](10818.py)
+[2562](https://www.acmicpc.net/problem/2562)|최댓값|[python](2562.py)
+[2577](https://www.acmicpc.net/problem/2577)|숫자의 개수|[python](2577.py)
+[3052](https://www.acmicpc.net/problem/3052)|나머지|[python](3052.py)
+[1546](https://www.acmicpc.net/problem/1546)|평균|[python](1546.py)
+[8958](https://www.acmicpc.net/problem/8958)|OX퀴즈|[python](8958.py)
+[4344](https://www.acmicpc.net/problem/4344)|평균은 넘겠지|[python](4344.py)
 
 ---
 
@@ -55,4 +55,3 @@
 - sum()
 
 > 입력 파라미터들의 합산값을 반환하는 함수
-
