@@ -1,12 +1,14 @@
-# 02 if문
+# 02 조건문
 
-|번호|문제 제목|나의 풀이|
-|---|---|---|
-[1330](https://www.acmicpc.net/problem/1330)|두 수 비교하기|[code](01_1330.py)
-[9498](https://www.acmicpc.net/problem/9498)|시험 성적|[code](02_9498.py)
-[2753](https://www.acmicpc.net/problem/2753)|윤년|[code](03_2753.py)
-[14681](https://www.acmicpc.net/problem/14681)|사분면 고르기|[code](04_14681.py)
-[2884](https://www.acmicpc.net/problem/2884)|알람 시계|[code](05_2884.py)
+|문제 번호|문제 제목|문제 풀이|
+|:---:|---|:---:|
+[1330](https://www.acmicpc.net/problem/1330)|두 수 비교하기|[python](1330.py)
+[9498](https://www.acmicpc.net/problem/9498)|시험 성적|[python](9498.py)
+[2753](https://www.acmicpc.net/problem/2753)|윤년|[python](2753.py)
+[14681](https://www.acmicpc.net/problem/14681)|사분면 고르기|[python](14681.py)
+[2884](https://www.acmicpc.net/problem/2884)|알람 시계|[python](2884.py)
+[2525](https://www.acmicpc.net/problem/2525)|오븐 시계|[python](2525.py)
+[2480](https://www.acmicpc.net/problem/2480)|주사위 세개|[python](2480.py)
 
 ---
 
