@@ -1,6 +1,6 @@
 # 04 1차원 배열
 
-|번호|문제 제목|나의 풀이|
+|문제 번호|문제 제목|문제 풀이|
 |:---:|---|:---:|
 [10818](https://www.acmicpc.net/problem/10818)|최소, 최대|[python](10818.py)
 [2562](https://www.acmicpc.net/problem/2562)|최댓값|[python](2562.py)
