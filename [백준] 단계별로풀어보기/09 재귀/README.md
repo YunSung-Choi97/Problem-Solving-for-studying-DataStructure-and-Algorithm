@@ -1,11 +1,12 @@
-# 10 재귀
+# 09 재귀
 
-|번호|문제 제목|나의 풀이|
-|---|---|---|
-[10872](https://www.acmicpc.net/problem/10872)|팩토리얼|[code](01_10872.py)
-[10870](https://www.acmicpc.net/problem/10870)|피보나치 수 5|[code](02_10870.py)
-[2447](https://www.acmicpc.net/problem/2447)|별 찍기 - 10|[code](03_2447.py)
-[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|[code](04_11729.py)
+|문제 번호|문제 제목|문제 풀이|
+|:---:|---|:---:|
+[10872](https://www.acmicpc.net/problem/10872)|팩토리얼|[python](10872.py)
+[10870](https://www.acmicpc.net/problem/10870)|피보나치 수 5|[python](10870.py)
+[17478](https://www.acmicpc.net/problem/17478)|재귀함수가 뭔가요?|[python](17478.py)
+[2447](https://www.acmicpc.net/problem/2447)|별 찍기 - 10|[python](2447.py)
+[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|[python](11729.py)
 
 ---
 
