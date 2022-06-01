@@ -1,18 +1,13 @@
-# 09 기본 수학 2
+# 08 기본 수학 2
 
-|번호|문제 제목|나의 풀이|
-|---|---|---|
-[1978](https://www.acmicpc.net/problem/1978)|소수 찾기|[code](01_1978.py)
-[2581](https://www.acmicpc.net/problem/2581)|소수|[code](02_2581.py)
-[11653](https://www.acmicpc.net/problem/11653)|소인수분해|[code](03_11653.py)
-[1929](https://www.acmicpc.net/problem/1929)|소수 구하기|[code](04_1929.py)
-[4948](https://www.acmicpc.net/problem/4948)|베르트랑 공준|[code](05_4948.py)
-[9020](https://www.acmicpc.net/problem/9020)|골드바흐의 추측|[code](06_9020.py)
-[1085](https://www.acmicpc.net/problem/1085)|직사각형에서 탈출|[code](07_1085.py)
-[3009](https://www.acmicpc.net/problem/3009)|네 번째 점|[code](08_3009.py)
-[4153](https://www.acmicpc.net/problem/4153)|직각삼각형|[code](09_4153.py)
-[3053](https://www.acmicpc.net/problem/3053)|택시 기하학|[code](10_3053.py)
-[1002](https://www.acmicpc.net/problem/1002)|터렛|[code](11_1002.py)
+|문제 번호|문제 제목|문제 풀이|
+|:---:|---|:---:|
+[1978](https://www.acmicpc.net/problem/1978)|소수 찾기|[python](1978.py)
+[2581](https://www.acmicpc.net/problem/2581)|소수|[python](2581.py)
+[11653](https://www.acmicpc.net/problem/11653)|소인수분해|[python](11653.py)
+[1929](https://www.acmicpc.net/problem/1929)|소수 구하기|[python](1929.py)
+[4948](https://www.acmicpc.net/problem/4948)|베르트랑 공준|[python](4948.py)
+[9020](https://www.acmicpc.net/problem/9020)|골드바흐의 추측|[python](9020.py)
 
 ---
 
