@@ -1,15 +1,15 @@
-# 14 백트래킹
+# 15 백트래킹
 
-|번호|문제 제목|나의 풀이|Memo|
-|---|---|---|---|
-[15649](https://www.acmicpc.net/problem/15649)|N과 M (1)|[code](01_15649.py)|순열
-[15650](https://www.acmicpc.net/problem/15650)|N과 M (2)|[code](02_15650.py)|조합
-[15651](https://www.acmicpc.net/problem/15651)|N과 M (3)|[code](03_15651.py)|중복 순열
-[15652](https://www.acmicpc.net/problem/15652)|N과 M (4)|[code](04_15652.py)|중복 조합
-[9663](https://www.acmicpc.net/problem/9663)|N-Queen|[code](05_9663.py)|
-[2580](https://www.acmicpc.net/problem/2580)|스도쿠|[code](06_2580.py)|
-[14888](https://www.acmicpc.net/problem/14888)|연산자 끼워넣기|[code](07_14888.py)|
-[14889](https://www.acmicpc.net/problem/14889)|스타트와 링크|[code](08_14889.py)|
+|문제 번호|문제 제목|문제 풀이|
+|:---:|---|:---:|
+[15649](https://www.acmicpc.net/problem/15649)|N과 M (1)|[python](15649.py)
+[15650](https://www.acmicpc.net/problem/15650)|N과 M (2)|[python](15650.py)
+[15651](https://www.acmicpc.net/problem/15651)|N과 M (3)|[python](15651.py)
+[15652](https://www.acmicpc.net/problem/15652)|N과 M (4)|[python](15652.py)
+[9663](https://www.acmicpc.net/problem/9663)|N-Queen|[python](9663.py)
+[2580](https://www.acmicpc.net/problem/2580)|스도쿠|[python](2580.py)
+[14888](https://www.acmicpc.net/problem/14888)|연산자 끼워넣기|[python](14888.py)
+[14889](https://www.acmicpc.net/problem/14889)|스타트와 링크|[python](14889.py)
 
 ---
 
