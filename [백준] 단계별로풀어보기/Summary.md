@@ -1,56 +1,52 @@
-# Baekjoon Online Judge 단계별로 풀어보기
+# Summary
 
-백준 BOJ(<https://www.acmicpc.net>) 사이트를 이용하여 진행한 공부와 코딩테스트 준비 과정을 기록한 페이지입니다.<br>
-초기에는 '단계별로 풀어보기' 문제를 순서대로 해결해나갔고, 이후에는 독학/스터디를 병행하며 tag와 tier를 골라 연습하고자 하는 파트의 문제, 어려운 난이도의 문제를 위주로 해결하며 정리했습니다.<br>
-진행하며 학습한 기본/기초적인 문법과 함수, 자료구조, 알고리즘에 대하여 학습한 내용을 간략히 Summary에 기록해두었습니다.<br>
-
-'단계별로 풀어보기' 문제는 단계에 따라 폴더별로 구분되어 있으며, 그 외의 모든 내용은 첫번째 폴더 내에서 구분되어 있습니다.<br>
-각각 폴더의 README에는 해당 폴더 내부의 문제 정보, 코드 정보, tag 등의 정보와 Summary 정보가 기록되어 있습니다.<br>
-
-[참고] 작성된 풀이는 제 풀이이기 때문에 이는 *최적화되지 않은 코드*일 수 있으며, 두 가지 이상의 풀이를 작성해 놓은 문제에서는 조금 더 *단원과 관련되고 최적화 되었다고 판단되는 풀이를 첫번째로 작성*해두었습니다. 또한, 정리된 내용은 저의 공부를 위한 정리이기 때문에 *틀린 부분*이 있을 수 있습니다.<br><br>
-
-앞으로 꾸준히 채워나갈 예정입니다 :)<br>
-**감사합니다.**
+단계별로 정리한 Summary를 통합
 
 <br>
 
-## Index (link)
+## Index
 
-- [Retry Problem](#retry-problem)
-- [Syntax Summary](#syntax-summary)
-  - [함수](#함수)
-    > print(), input(), len(), map(), range(), enumerate()<br>
-    (수학) max() / min(), sum(), round(), math.ceil() / math.floor() / math.trunc()<br>
-    (아스키코드) ord(), chr()
-  - [조건문](#조건문)
-    > if / elif / else 구문
-  - [반복문](#반복문)
-    > for문, while문, continue, break
-  - [에러와 예외 처리](#에러와-예외-처리)
-    > try, except, raise, else, finally
-  - [문자열](#문자열)
-    > .format(), .split(), .strip(), .join()
-  - [리스트](#리스트)
-    > .append(), .sort() / sorted(), .index() / .find(), .count()
-  - [딕셔너리](#딕셔너리)
-    > .keys() / .values() / .items(), .get(), .update() / .setdefault(), .pop() / .popitem(), .clear(), .copy()
-  - [순열과 조합](#순열과-조합)
-    > 순열 / 조합 / 중복 순열 / 중복 조합
-  - [기타](#기타)
-    > global
-- [Algorithm Summary](#algorithm-summary)
-  - [소수](#소수)
-  - [팩토리얼](#팩토리얼)
+1. **[Retry Problem](#retry-problem)**
+
+2. **[Syntax Summary](#syntax-summary)**
+- [함수](#함수)
+> print(), input(), len(), map(), range(), enumerate()<br>
+(수학) max() / min(), sum(), round(), math.ceil() / math.floor() / math.trunc()<br>
+(아스키코드) ord(), chr()
+- [조건문](#조건문)
+> if / elif / else 구문
+- [반복문](#반복문)
+> for문, while문, continue, break
+- [에러와 예외 처리](#에러와-예외-처리)
+> try, except, raise, else, finally
+- [문자열](#문자열)
+> .format(), .split(), .strip(), .join()
+- [리스트](#리스트)
+> .append(), .sort() / sorted(), .index() / .find(), .count()
+- [딕셔너리](#딕셔너리)
+> .keys() / .values() / .items(), .get(), .update() / .setdefault(), .pop() / .popitem(), .clear(), .copy()
+- [순열과 조합](#순열과-조합)
+> 순열 / 조합 / 중복 순열 / 중복 조합
+- [기타](#기타)
+> global
+
+3. **[Algorithm Summary](#algorithm-summary)**
+- [소수](#소수)
+- [팩토리얼](#팩토리얼)
 
 <br>
+
+---
 
 ## Retry Problem
 
-만족스럽지 못하게 푼 문제 (오랜 시간, 비효율적인 방식, 해결 아이디어 참고), 못 푼 문제들을 다시 풀어보기 위해 기록해 놓은 공간
+비효율적인 코드로 푼 것 같은 문제, 해결 과정이 오래 걸린 문제, 해결 아이디어를 참고한 문제 등의 만족스럽게 풀지 못한 문제들과 해결하지 못한 문제들을 모아 다시 도전해보기 위해 기록을 남긴는 공간
 
-|위치|번호|문제 제목|tag|Memo|
-|---|---|---|---|---|
+|문제 위치|문제 번호|문제 제목|tag|Memo|
+|:---:|:---:|---|---|---|
 10단계 4번|[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|Recursion|
+
+<br>
 
 ## Syntax Summary
 
@@ -109,6 +105,8 @@ list, tuple, dict, string 등을 입력받아 인덱스와 값을 리턴하고, 
 
  > 입력 파라미터 내에서 최댓값/최솟값을 반환하는 함수
 
+<br>
+
 - sum()
 
  > 입력 파라미터들의 합산값을 반환하는 함수
@@ -131,6 +129,8 @@ list, tuple, dict, string 등을 입력받아 인덱스와 값을 리턴하고, 
 30.0
 ```
 
+<br>
+
 - math.ceil() / math.floor() / math.trunc()
 
  > math 모듈을 호출한 뒤 사용가능하다.<br>
@@ -143,6 +143,8 @@ list, tuple, dict, string 등을 입력받아 인덱스와 값을 리턴하고, 
 - ord()
 
  > 입력 파라미터로 받은 문자에 대한 아스키 코드값 반환
+
+<br>
 
 - chr()
 
