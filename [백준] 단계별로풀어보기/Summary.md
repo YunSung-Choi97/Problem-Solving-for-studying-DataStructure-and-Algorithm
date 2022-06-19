@@ -25,6 +25,8 @@
 > .append(), .sort() / sorted(), .index() / .find(), .count()
 - [딕셔너리](#딕셔너리)
 > .keys() / .values() / .items(), .get(), .update() / .setdefault(), .pop() / .popitem(), .clear(), .copy()
+- [집합](#집합)
+> .intersection(), .union(), .difference(), .symmetric_difference()
 - [순열과 조합](#순열과-조합)
 > 순열 / 조합 / 중복 순열 / 중복 조합
 - [기타](#기타)
@@ -365,6 +367,29 @@ list, tuple, dict, string 등을 입력받아 인덱스와 값을 리턴하고, 
 
  > 딕셔너리를 복사하여 반환하는 함수.<br>
  같은 객체가 되지 않으며 복사할 때 사용된다.
+
+<br>
+
+### 집합
+
+- .intersection(), .union(), .difference(), .symmetric_difference()
+
+ > 집합간에 교집합, 합집합, 차집합, 대칭차집합을 계산해준다. 이 외에도 서로소, 포함관계를 확인하는 매소드도 있다.
+
+```python
+A = set([1, 2, 3, 4])
+B = set([3, 4, 5, 6])
+```
+```
+>>> A.intersection(B)
+{3, 4}
+>>> A.union(B)
+{1, 2, 3, 4, 5, 6}
+>>> A.difference(B)
+{1, 2}
+>>> A.symmetric_difference(B)
+{1, 2, 5, 6}
+```
 
 <br>
 
