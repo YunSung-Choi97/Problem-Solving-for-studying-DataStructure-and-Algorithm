@@ -24,7 +24,7 @@
 - 문제 해결에 실패해 다른 사람의 풀이를 참고한 문제
 
 |문제 위치|문제 번호|문제 제목|tag|
-|:---:|:---:|---|---|---|
+|:---:|:---:|---|---|
 9단계 5번|[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|Recursion
 16단계 15번|[9251](https://www.acmicpc.net/problem/9251)|LCS|Dynamic Programming, String
 16단계 15번|[12865](https://www.acmicpc.net/problem/12865)|평범한 배낭|Dynamic Programming, Knapsack
