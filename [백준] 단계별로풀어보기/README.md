@@ -11,3 +11,20 @@
 
 앞으로 꾸준히 채워나갈 예정입니다 :)<br>
 **감사합니다.**
+
+---
+
+## Retry Problem
+
+주로 아래와 같은 이유로 다시 풀어보고 싶은 문제들을 기록했습니다.
+
+- 문제 해결 과정이 너무 오래 걸린 문제 또는 여러 차례 실패가 나타난 문제
+- 문제 해결 후 발견한 더 효율적인 해결방안으로 재도전하고 싶은 문제
+- 문제 해결 과정에서 아이디어를 참고한 문제
+- 문제 해결에 실패해 다른 사람의 풀이를 참고한 문제
+
+|문제 위치|문제 번호|문제 제목|tag|
+|:---:|:---:|---|---|---|
+9단계 5번|[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|Recursion
+16단계 15번|[9251](https://www.acmicpc.net/problem/9251)|LCS|Dynamic Programming, String
+16단계 15번|[12865](https://www.acmicpc.net/problem/12865)|평범한 배낭|Dynamic Programming, Knapsack

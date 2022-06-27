@@ -6,9 +6,7 @@
 
 ## Index
 
-1. **[Retry Problem](#retry-problem)**
-
-2. **[Syntax Summary](#syntax-summary)**
+1. **[Syntax Summary](#syntax-summary)**
 - [함수](#함수)
 > print(), input(), len(), map(), range(), enumerate()<br>
 (수학) max() / min(), sum(), round(), math.ceil() / math.floor() / math.trunc()<br>
@@ -32,23 +30,13 @@
 - [기타](#기타)
 > global
 
-3. **[Algorithm Summary](#algorithm-summary)**
+2. **[Algorithm Summary](#algorithm-summary)**
 - [소수](#소수)
 - [팩토리얼](#팩토리얼)
 
 <br>
 
 ---
-
-## Retry Problem
-
-비효율적인 코드로 푼 것 같은 문제, 해결 과정이 오래 걸린 문제, 해결 아이디어를 참고한 문제 등의 만족스럽게 풀지 못한 문제들과 해결하지 못한 문제들을 모아 다시 도전해보기 위해 기록을 남긴는 공간
-
-|문제 위치|문제 번호|문제 제목|tag|Memo|
-|:---:|:---:|---|---|---|
-10단계 4번|[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|Recursion|
-
-<br>
 
 ## Syntax Summary
 
@@ -420,6 +408,8 @@ combinations_with_replacement(range(1, N+1), M)  # N개 중 M개를 선택 (중�
 > 지역변수를 전역변수로 사용하고자 할때 global (변수명)과 같이 작성해주면 된다.
 
 <br>
+
+---
 
 ## Algorithm Summary
 
