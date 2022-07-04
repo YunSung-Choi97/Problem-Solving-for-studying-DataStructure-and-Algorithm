@@ -28,3 +28,4 @@
 9단계 5번|[11729](https://www.acmicpc.net/problem/11729)|하노이 탑 이동 순서|Recursion
 16단계 15번|[9251](https://www.acmicpc.net/problem/9251)|LCS|Dynamic Programming, String
 16단계 15번|[12865](https://www.acmicpc.net/problem/12865)|평범한 배낭|Dynamic Programming, Knapsack
+17단계 4번|[10986](https://www.acmicpc.net/problem/10986)|나머지 합|Mathematics, Prefix Sum
