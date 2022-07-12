@@ -5,10 +5,13 @@ input = sys.stdin.readline
 N = int(input())
 A = list(map(int, input().split()))
 
-result = [-1] * N
-i, j = 0, 0
-while i < N:
-    j += 1
-    stack = list()
-    if A[i] < A[j]:
-        
+answer = [-1] * N  # 결과 저장
+stack = []
+stack.append(0)  # 오큰수를 찾아야 할 idx값 저장
+for i in range(1, N):
+    while stack and A[stack[-1]] < A[i]:
+        answer[stack.pop()] = A[i]
+    stack.append(i)
+
+# 결과 출력
+print(*answer)
