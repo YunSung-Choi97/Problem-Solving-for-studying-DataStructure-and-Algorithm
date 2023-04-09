@@ -50,6 +50,26 @@ def solution(p):
                 reverse_u += '('
         return '(' + solution(v) + ')' + reverse_u[1:-1]
 
-print(solution("(()())()"))
-print(solution(")("))
-print(solution("()))((()"))
+# print(solution('(()())()'))
+''' 입력 예시 1
+'(()())()'
+'''
+''' 출력 예시 1
+'(()())()'
+'''
+
+# print(solution(')('))
+''' 입력 예시 2
+')('
+'''
+''' 출력 예시 2
+'()'
+'''
+
+# print(solution('()))((()'))
+''' 입력 예시 3
+'()))((()'
+'''
+''' 출력 예시 3
+'()(())()'
+'''
